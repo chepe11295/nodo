@@ -52,16 +52,6 @@ void agregar()
 			fin = primero;//pasa al valor siguiente.
 			i++;
 		}
-		while(primero!=NULL)
-		{
-			cout<<"nombre del estudiante: "<<primero->nombre[5]<<endl;
-			cout<<"edad del estudiante: "<<primero->edad<<endl;
-			cout<<"nota del estudiante: "<<primero->nota<<endl;//imprime del mas nuevo al mas viejo
-			primero=primero->siguiente;
-
-		}
-
-	system ("PAUSE");
 }
 
 #endif /* AGREGAR_H_ */
