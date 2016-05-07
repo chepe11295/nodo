@@ -18,40 +18,33 @@ using std::endl;
 
 struct Estudiante
 {
-	char nombre[5];
+	char nombre[30];
 	int edad;
 	int nota;
 	struct Estudiante *siguiente;
 };
-
-void agregar()
+Estudiante est;
+Estudiante *primero=NULL;
+Estudiante *fin;
+struct Lista{
+void agregar(Estudiante)
 {
-		struct Estudiante *fin;
-		struct Estudiante *primero;
-		fin=NULL;
-		char nombres[5];
-		int edades, notas;
-		int cantidad;
-		int i=0;
-		cout<<"confirme la cantidad de alumnos"<<endl;
-		cin>>cantidad;
-		while(i!=cantidad)
 
-		{
 			primero=(struct Estudiante *)malloc(sizeof(struct Estudiante));//creando un nuevo nodo asignando memoria
 			primero->siguiente = fin;
 			cout<<"ingrese nombre"<<endl;
-			cin>>nombres;
-			primero->nombre[5]=nombres[5];//asigna posicion
+			cin>>est.nombre;
 			cout<<"ingrese edad"<<endl;
-			cin>>edades;
-			primero->edad=edades;//asigna posicion
+			cin>>est.edad;
 			cout<<"ingrese nota"<<endl;
-			cin>>notas;
-			primero->nota=notas;//asigna posicion
+			cin>>est.nota;
+			primero->nombre[30]=est.nombre[30];
+			primero->edad=est.edad;
+			primero->nota=est.nota;
 			fin = primero;//pasa al valor siguiente.
-			i++;
-		}
 }
+}lista1;
+
+
 
 #endif /* AGREGAR_H_ */
