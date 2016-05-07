@@ -11,5 +11,8 @@
 using namespace std;
 
 int main() {
-	agregar();
+	Lista l1;
+
+		l1.agregar(est);
+
 }
